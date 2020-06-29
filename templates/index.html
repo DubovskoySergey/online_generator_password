@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+  <div id="header">
+  <H1>Генератор паролей</h1>
+  </div>
+  <div id="main">
+    <h3>Хотите сгенерировать пароль? Просто заполните форму ниже<br>
+      и нажмите кнопку "Создать пароль".</h3>
+    <form action="" method="post">
+      <p><input type="checkbox" name = "num" value="True">Цифры<br>
+      <input type="checkbox" name = "special_char">Спец. символы: %, *, ),?, @, #, $, ~ <br>
+      <label class="container">Количество символов
+      <input type="text" name="len_num" value="8">
+      <p><label class="error">{{error}}</label>
+      </label>
+      <p><input type="submit">
+    </form>
+    <ul>{% for pass in passwords %}
+        <li>{{pass}}</li>
+        {% endfor%}
+    </ul>
+  </div>
+  <p><div id="leftSidebar">Левый сайдбар</div>
+</body>
+</html>

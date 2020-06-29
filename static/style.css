@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background: #f8f5f0;
+  color: #52534e;
+  font-size: 13px;
+  font-family: Verdana, sans-serif;
+}
+div {
+  margin: 10px;
+  font-size: 20px;
+  height: 80px;
+}
+#header{
+
+}
+#leftSidebar{
+  background-color: #ddd;
+}
+#main{
+  border: 1px solid black;
+  background-color: #eee;
+  height: auto;
+}
+#footer{
+  border: 1px solid black;
+  background-color: #ccc;
+}
+
+.error {
+  color: red;
+}
