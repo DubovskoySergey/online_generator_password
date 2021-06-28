@@ -11,6 +11,16 @@
 
 Если в вашей системе нет утилиты make, установите переменные окружения вручную.
 
+Для linux:
+
 <b>export FLASK_APP=main.py
 
 export FLASK_ENV=development</b>
+
+Для Windows:
+
+<b>set FLASK_APP=main.py
+
+$env:FLASK_APP = "main.py"
+
+set FLASK_ENV=development</b>
