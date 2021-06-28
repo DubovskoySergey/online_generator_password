@@ -15,7 +15,9 @@
 
 <b>export FLASK_APP=main.py
 
-export FLASK_ENV=development</b>
+export FLASK_ENV=development
+
+flask run</b>
 
 Для Windows:
 
@@ -23,4 +25,6 @@ export FLASK_ENV=development</b>
 
 $env:FLASK_APP = "main.py"
 
-set FLASK_ENV=development</b>
+set FLASK_ENV=development
+
+flask run</b>
